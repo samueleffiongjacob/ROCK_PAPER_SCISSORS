@@ -142,10 +142,16 @@ def rps():
         # Declare the winner
         if winner == player_move:
             print(name, "WINS!!!")
+            print('---------------------------------------------')
+            print('please wait for 5 seconds to continue')
         elif winner == comp_move:
             print("COMPUTER WINS!!!")
+            print('---------------------------------------------')
+            print('please wait for 5 seconds to continue')
         else:
             print("TIE GAME")
+            print('---------------------------------------------')
+            print('please wait for 5 seconds to continue')
 
         print()
         time.sleep(5)
@@ -209,11 +215,18 @@ def rpsls():
         winner = rpsls_table[player_move][comp_move]
         print()
         if winner == player_move:
+            print('---------------------------------------------------------')
             print(name, "WINS!!!")
+            print('---------------------------------------------------------')
+            print('PLEASE wait FOR 5 seconds')
         elif winner == comp_move:
             print("COMPUTER WINS!!!")
+            print('---------------------------------------------------------')
+            print('PLEASE wait FOR 5 seconds')
         else:
             print("TIE GAME")
+            print('---------------------------------------------------------')
+            print('PLEASE wait FOR 5 seconds')
         print()
         time.sleep(5)
         clear()
@@ -324,8 +337,8 @@ if __name__ == '__main__':
             return askYesNoQuestion(question)
 
 
-answer = askYesNoQuestion("Are you sure u want to leave? (Yes or No)")
+answer = askYesNoQuestion("Are you sure u want to leave? (Yes): \n")
 if answer == "YES":
-    print("bye.")
+    print("bye which to see u again.")
 elif answer == "NO":
     print("continue.")
