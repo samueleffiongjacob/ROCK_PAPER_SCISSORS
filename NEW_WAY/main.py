@@ -92,7 +92,7 @@ def rpsls():
         print()
         if winner == player_move:
             print('---------------------------------------------------------')
-            print(name, "WINS!!!")
+            print("YOU WINS!!!")
             print('---------------------------------------------------------')
             print('PLEASE wait FOR 5 seconds')
         elif winner == comp_move:
