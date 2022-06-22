@@ -92,7 +92,7 @@ def rps():
 
         # Declare the winner
         if winner == player_move:
-            print(name, "WINS!!!")
+            print("YOU WINS!!!")
             print('---------------------------------------------')
             print('please wait for 5 seconds to continue')
         elif winner == comp_move:
