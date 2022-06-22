@@ -68,8 +68,9 @@ if __name__ == '__main__':
             print('---------------------------------------------------------')
 
 
-answer = askYesNoQuestion("Are you sure u want to leave? (Yes): \n")
+answer = askYesNoQuestion(
+    "Are you sure u want to leave? (click any key to leave e.g yes, no): \n")
 if answer == "YES":
     print("bye which to see u again.")
 elif answer == "NO":
-    print("continue.")
+    print("bye which to see u again.")
